@@ -1,0 +1,31 @@
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form  textarea{
+  border:1px solid black;
+  width: 500rpx;
+}
+form {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+form  button{
+  width:160rpx;
+  margin-left:50rpx;
+}
+.messageBoard{
+  margin-top:100rpx;
+}
+.status{
+  width:100rpx; height: 100rpx;
+  background: green;
+}
+.treeHoleStatus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:100rpx;
+}
