@@ -18,10 +18,13 @@ Page({
         }).catch(console.error);
       }
     });
+  }, 
+  bindKeyInput(e){
+    this.setData({
+      inputMessage: e.detail.value//将input至与data中的inputValue绑定
+    })
   },
   formSubmit(e){
-    this.setData({ inputMessage: e.detail.value.textarea})
-    console.log(this.data.userName,this.data.inputMessage)
     var Message = AV.Object.extend('Message');
     // 新建对象
     var message = new Message();
@@ -35,6 +38,7 @@ Page({
         icon: 'success',
         duration: 2000
       })
+      
       console.log('objectId is ' + todo.id);
     }, function (error) {
       console.error(error);

@@ -1,1 +1,9 @@
 /* pages/messageList.wxss */
+.messageList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid black;
+  margin:40rpx;
+  padding:20rpx;
+}

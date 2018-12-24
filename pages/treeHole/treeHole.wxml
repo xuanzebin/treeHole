@@ -1,8 +1,8 @@
 <view class="messageInput">
-  <form bindsubmit="formSubmit">
+  <form bindreset="formSubmit">
     <view class="row">
-      <textarea placeholder="我想说：" name="textarea"/>
-      <button form-type="submit">提交</button>
+      <textarea placeholder="我想说：" name="textarea" bindinput='bindKeyInput'/>
+      <button form-type="reset">提交</button>
     </view>
   </form>
 </view>

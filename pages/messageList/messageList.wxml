@@ -1,2 +1,6 @@
 <!--pages/messageList.wxml-->
-hi
+<view wx:for="{{messageList}}" wx:key="{{key}}" class="messageList">
+  <text class="userName">{{item.userName}}:</text>
+  <text class="content">{{item.content}}</text>
+</view>
+  
