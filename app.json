@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/messageList/messageList",
     "pages/index/index",
     "pages/treeHole/treeHole",
-    "pages/logs/logs",
-    "pages/messageList/messageList"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
