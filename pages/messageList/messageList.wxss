@@ -1,4 +1,6 @@
 /* pages/messageList.wxss */
+@import "../../iconfont/iconfont.wxss";
+
 .messageList{
   display: flex;
   justify-content: center;
@@ -6,4 +8,30 @@
   border:1px solid black;
   margin:40rpx;
   padding:20rpx;
+}
+.yesterday{
+  border-color:red;
+}
+.theDayBeforeYesterday{
+  border-color:blue;
+}
+.topBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconfont{
+  margin-left:20rpx;
+  margin-right:20rpx;
+  font-size:40rpx;
+}
+.time{
+  color:green;
+  font-size:50rpx;
+}
+.icon-Left-.hidden:before{
+  color:transparent;
+}
+.icon-Right-.hidden:before{
+  color:transparent;
 }
