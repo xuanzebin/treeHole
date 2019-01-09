@@ -1,9 +1,10 @@
 const AV = require('../../libs/av-weapp-min.js');
-
+const app=getApp()
 Page({
   data:{
     inputMessage:null,
-    userName:null
+    userName:null,
+    todayMessage: app.data.todayMessageList.length
   },
   onReady(e){
     const user = AV.User.current();
@@ -19,6 +20,11 @@ Page({
       }
     });
   }, 
+  onShow(e){
+    this.setData({
+      todayMessage: app.data.todayMessageList.length
+    })
+  },
   bindKeyInput(e){
     this.setData({
       inputMessage: e.detail.value//将input至与data中的inputValue绑定
@@ -32,14 +38,16 @@ Page({
     message.set('userName', this.data.userName);
     // 设置优先级
     message.set('content', this.data.inputMessage);
+    message.set('show',false)
     message.save().then( (todo)=> {
+      this.setData({
+        todayMessage: app.data.todayMessageList.length
+      })
       wx.showToast({
         title: '提交成功',
         icon: 'success',
         duration: 2000
       })
-      
-      console.log('objectId is ' + todo.id);
     }, function (error) {
       console.error(error);
     });

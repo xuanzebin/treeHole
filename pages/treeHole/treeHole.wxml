@@ -11,5 +11,5 @@
 </view>
 <view class="treeHoleStatus">
   <text>树洞状态：</text>
-  <view class="status"></view>
+  <view class="status {{todayMessage===10?'full':''}}"></view>
 </view>

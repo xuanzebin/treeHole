@@ -23,6 +23,9 @@ form  button{
   width:100rpx; height: 100rpx;
   background: green;
 }
+.status.full{
+  background: red;
+}
 .treeHoleStatus{
   display: flex;
   justify-content: center;

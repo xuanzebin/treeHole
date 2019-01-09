@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/messageList/messageList",
     "pages/index/index",
+    "pages/messageList/messageList",
     "pages/treeHole/treeHole",
     "pages/logs/logs"
   ],

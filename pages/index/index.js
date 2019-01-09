@@ -5,7 +5,6 @@ const AV = require('../../libs/av-weapp-min.js');
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -58,8 +57,9 @@ Page({
   },
 
   intoTreeHole() {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../treeHole/treeHole',
     })
+    
   }
 })
