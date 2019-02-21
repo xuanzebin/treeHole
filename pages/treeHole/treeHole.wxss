@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom:40rpx;
 }
 form  textarea{
   border:1px solid black;
-  width: 500rpx;
+  width: 600rpx;
 }
 form {
   display:flex;
@@ -13,11 +14,10 @@ form {
   align-content: center;
 }
 form  button{
-  width:160rpx;
-  margin-left:50rpx;
+  width: 100%;
 }
-.messageBoard{
-  margin-top:100rpx;
+.messageBoard button{
+  width:600rpx;
 }
 .status{
   width:100rpx; height: 100rpx;

@@ -2,6 +2,12 @@
   <form bindreset="formSubmit">
     <view class="row">
       <textarea placeholder="我想说：" name="textarea" bindinput='bindKeyInput'/>
+    </view>
+    <view class="row">
+      <text>匿名提交：</text>
+      <switch bindchange="switchChange"/>
+    </view>
+    <view class="row">
       <button form-type="reset">提交</button>
     </view>
   </form>
@@ -9,7 +15,7 @@
 <view class="messageBoard">
   <button bindtap="intoMessageList">查看留言</button>
 </view>
-<view class="treeHoleStatus">
+<!-- <view class="treeHoleStatus">
   <text>树洞状态：</text>
   <view class="status {{todayMessage===10?'full':''}}"></view>
-</view>
+</view> -->

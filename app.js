@@ -1,4 +1,4 @@
-//app.js
+  //app.js
 const AV = require('./libs/av-weapp-min.js')
 var APP_ID = '3PHoxuk9H0YVScbvPPD5vIku-gzGzoHsz';
 var APP_KEY = 'cqldnwiVXqqa4q38d0hb5Maa';

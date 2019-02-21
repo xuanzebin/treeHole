@@ -1,8 +1,8 @@
 <!--pages/messageList.wxml-->
 <view class="topBar">
-  <text class="iconfont icon-Left- {{timeButtonCheck===0?'hidden':''}}" bindtap="addDay"></text>
+  <text class="iconfont icon-Left- {{timeButtonCheck===2?'hidden':''}}" bindtap="reduceDay"></text>
   <text class="time">{{time}}</text>
-  <text class="iconfont icon-Right- {{timeButtonCheck===2?'hidden':''}}" bindtap="reduceDay"></text>
+  <text class="iconfont icon-Right- {{timeButtonCheck===0?'hidden':''}}" bindtap="addDay"></text>
 </view>
 <view wx:for="{{todayMessageList}}" wx:key="{{key}}" class="messageList today" wx:if="{{timeButtonCheck===0}}">
   <text class="userName">{{item.userName}}:</text>
